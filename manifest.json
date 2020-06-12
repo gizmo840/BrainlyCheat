@@ -1,0 +1,16 @@
+{
+	"name": "Brainly Cheat",
+	"description": "Bypass for daily limit for displaying homework answers on Brainly.",
+	"version": "0.1",
+	"manifest_version": 2,
+	"content_scripts": [
+	  {
+		"matches": ["*://*.brainly.com/*", "*://*.brainly.pl/*"],
+		"js": ["scripts/bypasslimit.js"],
+		"run_at": "document_idle"
+	  }
+	],
+	"icons": {
+	  "128": "icons/icon128.png"
+	}
+  }
